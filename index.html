@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>Online Sneaker Store</title>
+
+<style>
+body {
+  font-family: Arial;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.product {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.details {
+  flex: 1;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+.review {
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Sneaker Product Page</h1>
+
+<div class="container">
+
+<div class="product">
+
+<!-- Product Image -->
+<div>
+<img src="https://wallpapers.com/images/hd/jordan-shoes-4k-jjoiuati0ao3vhr5.jpg" alt="Sneakers">
+</div>
+
+<!-- Product Details -->
+<div class="details">
+
+<h2>Cool Sneakers</h2>
+<p><b>Price:</b> ₹2999</p>
+
+<p>These sneakers are very comfortable and stylish. You can wear them daily.</p>
+
+<p><b>Select Color:</b></p>
+<input type="radio" name="color"> Red<br>
+<input type="radio" name="color"> Black<br>
+<input type="radio" name="color"> White<br>
+
+<p><b>Select Size:</b></p>
+<input type="radio" name="size"> 7<br>
+<input type="radio" name="size"> 8<br>
+<input type="radio" name="size"> 9<br>
+<input type="radio" name="size"> 10<br>
+
+<br>
+
+<button onclick="addToCart()">Add to Cart</button>
+<p id="message" style="color:green;"></p>
+
+</div>
+</div>
+<h3>Buy Options</h3>
+<a href="https://www.amazon.in" target="_blank">Buy on Amazon</a><br>
+<a href="https://www.flipkart.com" target="_blank">Buy on Flipkart</a><br>
+
+<!-- Reviews Section -->
+<h4>Customer Reviews</h3>
+
+<div class="review">⭐⭐⭐⭐⭐ Very good product!</div>
+<div class="review">⭐⭐⭐⭐ Nice quality.</div>
+<div class="review">⭐⭐⭐⭐⭐ Value for money.</div>
+
+</div>
+
+<script>
+function addToCart() {
+ document.getElementById("message").innerHTML = "✔ Product added to cart";
+}
+</script>
+
+</body>
+</html>
