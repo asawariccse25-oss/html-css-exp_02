@@ -1,8 +1,12 @@
+/* BODY */
 body {
     font-family: Arial, sans-serif;
     background-color: #fff5e6;
+    margin: 0;
+    padding: 10px;
 }
 
+/* HEADER */
 .header {
     background-color: #6a5acd;
 }
@@ -13,27 +17,41 @@ body {
     margin: 0;
 }
 
+/* LEFT PANEL */
 .left-panel {
     background-color: #f2f2f2;
     padding: 15px;
+    border-radius: 10px;
 }
 
+/* RIGHT PANEL */
 .right-panel {
     background-color: #ffffff;
     padding: 15px;
+    border-radius: 10px;
 }
 
+/* TABLE */
 table {
-    border-collapse: separate;
+    border-collapse: collapse;
+    width: 100%;
 }
 
+td {
+    border: none;
+}
+
+/* PRODUCT CARD */
 .product {
     background-color: #fff0f5;
     padding: 15px;
-    border-radius: 10px;
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* HOVER EFFECT */
 .product:hover {
     transform: scale(1.08);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
@@ -41,14 +59,18 @@ table {
     z-index: 10;
 }
 
+/* IMAGE */
 .product-img {
+    border-radius: 8px;
     transition: transform 0.3s;
 }
 
+/* IMAGE ZOOM */
 .product:hover .product-img {
     transform: scale(1.2);
 }
 
+/* BUTTON */
 button {
     background-color: #6a5acd;
     color: white;
@@ -56,17 +78,47 @@ button {
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 8px;
     transition: transform 0.2s, background 0.3s;
 }
 
+/* BUTTON CLICK */
 button:active {
     transform: scale(0.9);
     background-color: green;
 }
 
+/* BUTTON HOVER */
+button:hover {
+    background-color: #483d8b;
+}
+
+/* CART TOTAL */
+h2 {
+    color: #333;
+    margin-top: 10px;
+}
+
+/* REVIEWS */
 .reviews {
     background: white;
     padding: 15px;
     margin-top: 20px;
     border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* LIST */
+ul {
+    padding-left: 20px;
+}
+
+/* INPUT SPACING */
+input {
+    margin: 5px 0;
+}
+
+/* RESPONSIVE IMAGE */
+img {
+    max-width: 100%;
 }

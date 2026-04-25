@@ -1,13 +1,11 @@
-<script>
-
-// Total price variable
+// Total price
 let total = 0;
 
-// Add to cart function
+// Add to Cart function
 function addToCart(price) {
 
-    // Add price
-    total = total + price;
+    // Add price to total
+    total += price;
 
     // Update total on screen
     document.getElementById("total").innerText = total;
@@ -15,13 +13,22 @@ function addToCart(price) {
     // Show message
     document.getElementById("msg").innerText = "Item added to cart 🛒";
 
-}
-
-// Optional: Clear message after 2 seconds
-function clearMessage() {
-    setTimeout(function() {
+    // Auto clear message after 2 sec
+    setTimeout(() => {
         document.getElementById("msg").innerText = "";
     }, 2000);
 }
 
-</script>
+// 🔥 BONUS: Reset cart
+function resetCart() {
+
+    total = 0;
+
+    document.getElementById("total").innerText = total;
+
+    document.getElementById("msg").innerText = "Cart cleared ❌";
+
+    setTimeout(() => {
+        document.getElementById("msg").innerText = "";
+    }, 2000);
+}
