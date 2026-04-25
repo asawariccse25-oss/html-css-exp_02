@@ -1,0 +1,113 @@
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5e6;
+    margin: 0;
+}
+
+/* HEADER */
+.header {
+    background-color: #6a5acd;
+}
+
+.header h1 {
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+/* LEFT PANEL */
+.left-panel {
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+.left-panel h3 {
+    color: #333;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+/* TABLE */
+table {
+    border-collapse: separate;
+}
+
+/* PRODUCT CARD */
+.product {
+    background-color: #fff0f5;
+    padding: 15px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* HOVER EFFECT */
+.product:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 10;
+}
+
+/* IMAGE */
+.product-img {
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+/* IMAGE ZOOM */
+.product:hover .product-img {
+    transform: scale(1.2);
+}
+
+/* BUTTON */
+button {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+/* BUTTON CLICK EFFECT */
+button:active {
+    transform: scale(0.9);
+    background-color: green;
+}
+
+/* CART TOTAL */
+h2 {
+    color: #333;
+    margin-top: 10px;
+}
+
+/* MESSAGE */
+#msg {
+    color: green;
+    font-weight: bold;
+}
+
+/* REVIEWS */
+.reviews {
+    background: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* LIST STYLE */
+ul {
+    padding-left: 20px;
+}
+
+/* INPUT SPACING */
+input {
+    margin: 5px 0;
+}

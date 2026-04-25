@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5e6;
+}
+
+.header {
+    background-color: #6a5acd;
+}
+
+.header h1 {
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+.left-panel {
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+.right-panel {
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+table {
+    border-collapse: separate;
+}
+
+.product {
+    background-color: #fff0f5;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 10;
+}
+
+.product-img {
+    transition: transform 0.3s;
+}
+
+.product:hover .product-img {
+    transform: scale(1.2);
+}
+
+button {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:active {
+    transform: scale(0.9);
+    background-color: green;
+}
+
+.reviews {
+    background: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}

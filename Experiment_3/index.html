@@ -1,96 +1,17 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>Sneaker Store</title>
 
-<style>
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fff5e6;
-}
-
-/* HEADER */
-.header {
-    background-color: #6a5acd;
-}
-
-.header h1 {
-    color: white;
-    padding: 15px;
-    margin: 0;
-}
-
-/* LEFT PANEL */
-.left-panel {
-    background-color: #f2f2f2;
-    padding: 15px;
-}
-
-/* RIGHT PANEL */
-.right-panel {
-    background-color: #ffffff;
-    padding: 15px;
-}
-
-/* TABLE FIX */
-table {
-    border-collapse: separate;
-}
-
-/* PRODUCT CARD */
-.product {
-    background-color: #fff0f5;
-    padding: 15px;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-/* ZOOM EFFECT */
-.product:hover {
-    transform: scale(1.08);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    position: relative;
-    z-index: 10;
-}
-
-/* IMAGE ZOOM */
-.product-img {
-    transition: transform 0.3s;
-}
-
-.product:hover .product-img {
-    transform: scale(1.2);
-}
-
-/* BUTTON */
-button {
-    background-color: #6a5acd;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s, background 0.3s;
-}
-
-button:active {
-    transform: scale(0.9);
-    background-color: green;
-}
-
-/* REVIEWS */
-.reviews {
-    background: white;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 10px;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+
+<!-- CART TOTAL -->
+<h2 align="center">🛒 Cart Total: ₹ <span id="total">0</span></h2>
+<p id="msg" align="center"></p>
 
 <!-- HEADER -->
 <table width="100%" class="header">
@@ -138,7 +59,7 @@ button:active {
 <b>Running Sneakers</b><br>⭐⭐⭐⭐<br>₹2999<br>
 <input type="radio" name="size1">6 <input type="radio" name="size1">7 <br>
 <input type="radio" name="color1">Red <input type="radio" name="color1">Black<br>
-<button>Add to Cart</button>
+<button onclick="addToCart(2999)">Add to Cart</button>
 </td>
 
 <!-- PRODUCT 2 -->
@@ -147,7 +68,7 @@ button:active {
 <b>Casual Sneakers</b><br>⭐⭐⭐⭐⭐<br>₹2499<br>
 <input type="radio" name="size2">6 <input type="radio" name="size2">7<br>
 <input type="radio" name="color2">Blue <input type="radio" name="color2">Black<br>
-<button>Add to Cart</button>
+<button onclick="addToCart(2499)">Add to Cart</button>
 </td>
 
 <!-- PRODUCT 3 -->
@@ -156,7 +77,7 @@ button:active {
 <b>Sports Sneakers</b><br>⭐⭐⭐⭐<br>₹2799<br>
 <input type="radio" name="size3">6 <input type="radio" name="size3">7<br>
 <input type="radio" name="color3">White <input type="radio" name="color3">Black<br>
-<button>Add to Cart</button>
+<button onclick="addToCart(2799)">Add to Cart</button>
 </td>
 
 </tr>
@@ -169,7 +90,7 @@ button:active {
 <b>Gym Sneakers</b><br>⭐⭐⭐⭐⭐<br>₹3199<br>
 <input type="radio" name="size4">6 <input type="radio" name="size4">7<br>
 <input type="radio" name="color4">Grey <input type="radio" name="color4">Black<br>
-<button>Add to Cart</button>
+<button onclick="addToCart(3199)">Add to Cart</button>
 </td>
 
 <!-- PRODUCT 5 -->
@@ -178,7 +99,7 @@ button:active {
 <b>Walking Sneakers</b><br>⭐⭐⭐⭐<br>₹1999<br>
 <input type="radio" name="size5">6 <input type="radio" name="size5">7<br>
 <input type="radio" name="color5">White <input type="radio" name="color5">Black<br>
-<button>Add to Cart</button>
+<button onclick="addToCart(1999)">Add to Cart</button>
 </td>
 
 <!-- PRODUCT 6 -->
@@ -187,7 +108,7 @@ button:active {
 <b>Trendy Sneakers</b><br>⭐⭐⭐⭐⭐<br>₹2899<br>
 <input type="radio" name="size6">6 <input type="radio" name="size6">7<br>
 <input type="radio" name="color6">Pink <input type="radio" name="color6">Black<br>
-<button>Add to Cart</button>
+<button onclick="addToCart(2899)">Add to Cart</button>
 </td>
 
 </tr>
@@ -208,5 +129,20 @@ button:active {
 
 </table>
 
+<!-- JAVASCRIPT -->
+<script>
+let total = 0;
+
+function addToCart(price) {
+    total += price;
+
+    document.getElementById("total").innerText = total;
+
+    document.getElementById("msg").innerText = "Item added to cart 🛒";
+}
+</script>
+
 </body>
 </html>
+
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sneaker Store</title>
+
+<style>
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5e6;
+    margin: 0;
+}
+
+/* HEADER */
+.header {
+    background-color: #6a5acd;
+}
+
+.header h1 {
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+/* LEFT PANEL */
+.left-panel {
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+/* PRODUCT CARD */
+.product {
+    background-color: #fff0f5;
+    padding: 15px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* IMAGE */
+.product-img {
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.product:hover .product-img {
+    transform: scale(1.2);
+}
+
+/* BUTTON */
+button {
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.9);
+    background-color: green;
+}
+
+/* MESSAGE */
+#msg {
+    color: green;
+    font-weight: bold;
+}
+
+/* REVIEWS */
+.reviews {
+    background: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- CART -->
+<h2 align="center">🛒 Cart Total: ₹ <span id="total">0</span></h2>
+<p id="msg" align="center"></p>
+
+<!-- HEADER -->
+<table width="100%" class="header">
+<tr><td align="center"><h1>Sneaker Store</h1></td></tr>
+</table>
+
+<br>
+
+<table width="100%" border="1">
+
+<tr>
+
+<!-- LEFT PANEL -->
+<td width="25%" valign="top" class="left-panel">
+
+<h3>Category</h3>
+<ul>
+<li>Men</li>
+<li>Women</li>
+<li>Kids</li>
+<li>Fashion</li>
+</ul>
+
+<h3>Gender</h3>
+<input type="checkbox"> Men<br>
+<input type="checkbox"> Women<br>
+
+<h3>Size</h3>
+<input type="radio" name="size"> 6<br>
+<input type="radio" name="size"> 7<br>
+<input type="radio" name="size"> 8<br>
+
+</td>
+
+<!-- RIGHT PANEL -->
+<td width="75%" valign="top" class="right-panel">
+
+<table width="100%" cellpadding="10">
+
+<tr>
+
+<td class="product" align="center">
+<img src="https://tse2.mm.bing.net/th/id/OIP.ePM3BGOO4pgiI9zgAggDhgHaHa?pid=Api" width="150"><br>
+<b>Running Sneakers</b><br>₹2999<br>
+<button onclick="addToCart(2999)">Add to Cart</button>
+</td>
+
+<td class="product" align="center">
+<img src="https://tse3.mm.bing.net/th/id/OIP.C97L8TBBuVYuAwwIhLUBvgHaHa?pid=Api" width="150"><br>
+<b>Casual Sneakers</b><br>₹2499<br>
+<button onclick="addToCart(2499)">Add to Cart</button>
+</td>
+
+<td class="product" align="center">
+<img src="https://tse1.mm.bing.net/th/id/OIP.KEoySw4yejVqkAY-NNMN0gHaEK?pid=Api" width="150"><br>
+<b>Sports Sneakers</b><br>₹2799<br>
+<button onclick="addToCart(2799)">Add to Cart</button>
+</td>
+
+</tr>
+
+<tr>
+
+<td class="product" align="center">
+<img src="https://m.media-amazon.com/images/I/81b0Xze-ZqL._AC_UL1500_.jpg" width="150"><br>
+<b>Gym Sneakers</b><br>₹3199<br>
+<button onclick="addToCart(3199)">Add to Cart</button>
+</td>
+
+<td class="product" align="center">
+<img src="https://i.pinimg.com/originals/ab/f6/62/abf662ce03ee3500a7e8dda16b27d92d.jpg" width="150"><br>
+<b>Walking Sneakers</b><br>₹1999<br>
+<button onclick="addToCart(1999)">Add to Cart</button>
+</td>
+
+<td class="product" align="center">
+<img src="https://tse2.mm.bing.net/th/id/OIP.ePM3BGOO4pgiI9zgAggDhgHaHa?pid=Api" width="150"><br>
+<b>Trendy Sneakers</b><br>₹2899<br>
+<button onclick="addToCart(2899)">Add to Cart</button>
+</td>
+
+</tr>
+
+</table>
+
+<!-- REVIEWS -->
+<div class="reviews">
+<h2>Customer Reviews</h2>
+<p>⭐⭐⭐⭐⭐ - Very comfortable!</p>
+<p>⭐⭐⭐⭐ - Good quality.</p>
+</div>
+
+</td>
+
+</tr>
+
+</table>
+
+<!-- JAVASCRIPT -->
+<script>
+
+let total = 0;
+
+function addToCart(price) {
+
+    total += price;
+
+    document.getElementById("total").innerText = total;
+
+    document.getElementById("msg").innerText = "Item added to cart 🛒";
+
+    setTimeout(() => {
+        document.getElementById("msg").innerText = "";
+    }, 2000);
+
+}
+
+</script>
+
+</body>
+</html>
