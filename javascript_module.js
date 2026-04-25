@@ -1,34 +1,37 @@
-// Total price
+// Total cart value
 let total = 0;
 
-// Add to Cart function
-function addToCart(price) {
+// Common function to show message
+function showMessage(text) {
+    const msg = document.getElementById("msg");
+    msg.innerText = text;
 
-    // Add price to total
-    total += price;
-
-    // Update total on screen
-    document.getElementById("total").innerText = total;
-
-    // Show message
-    document.getElementById("msg").innerText = "Item added to cart 🛒";
-
-    // Auto clear message after 2 sec
+    // Auto clear after 2 sec
     setTimeout(() => {
-        document.getElementById("msg").innerText = "";
+        msg.innerText = "";
     }, 2000);
 }
 
-// 🔥 BONUS: Reset cart
+// Add to Cart
+function addToCart(price) {
+
+    total += price;
+
+    // Update total
+    document.getElementById("total").innerText = total;
+
+    // Show message
+    showMessage("Item added to cart 🛒");
+}
+
+// Clear Cart
 function resetCart() {
 
     total = 0;
 
+    // Update total
     document.getElementById("total").innerText = total;
 
-    document.getElementById("msg").innerText = "Cart cleared ❌";
-
-    setTimeout(() => {
-        document.getElementById("msg").innerText = "";
-    }, 2000);
+    // Show message
+    showMessage("Cart cleared ❌");
 }

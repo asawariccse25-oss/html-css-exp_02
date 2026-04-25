@@ -3,15 +3,23 @@
 <head>
 <title>Sneaker Store</title>
 
-<!-- LINK CSS -->
+<!-- CSS -->
 <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<!-- CART TOTAL -->
+<!-- CART SECTION -->
 <h2 align="center">🛒 Cart Total: ₹ <span id="total">0</span></h2>
+
+<p id="msg" align="center"></p>
+
+<div align="center">
+    <button onclick="resetCart()">Clear Cart</button>
+</div>
+
+<br>
 
 <!-- HEADER -->
 <table width="100%" class="header">
@@ -20,7 +28,7 @@
 
 <br>
 
-<table width="100%" border="1">
+<table width="100%">
 
 <tr>
 
@@ -56,27 +64,21 @@
 <!-- PRODUCT 1 -->
 <td class="product" align="center">
 <img src="https://feature.com/cdn/shop/files/Zoom-Vomero-5---Iron-Grey-Chrome-Metallic-Silver-IM3486-001---01-07-26---Feature--RV-5.jpg?v=1767814074&width=3072" class="product-img" width="150"><br>
-<b>Running Sneakers</b><br>⭐⭐⭐⭐<br>₹2999<br>
-<input type="radio" name="size1">6 <input type="radio" name="size1">7 <br>
-<input type="radio" name="color1">Red <input type="radio" name="color1">Black<br>
+<b>Running Sneakers</b><br>₹2999<br>
 <button onclick="addToCart(2999)">Add to Cart</button>
 </td>
 
 <!-- PRODUCT 2 -->
 <td class="product" align="center">
 <img src="https://tse2.mm.bing.net/th/id/OIP.ePM3BGOO4pgiI9zgAggDhgHaHa?pid=Api" class="product-img" width="150"><br>
-<b>Casual Sneakers</b><br>⭐⭐⭐⭐⭐<br>₹2499<br>
-<input type="radio" name="size2">6 <input type="radio" name="size2">7<br>
-<input type="radio" name="color2">Blue <input type="radio" name="color2">Black<br>
+<b>Casual Sneakers</b><br>₹2499<br>
 <button onclick="addToCart(2499)">Add to Cart</button>
 </td>
 
 <!-- PRODUCT 3 -->
 <td class="product" align="center">
 <img src="https://tse3.mm.bing.net/th/id/OIP.C97L8TBBuVYuAwwIhLUBvgHaHa?pid=Api" class="product-img" width="150"><br>
-<b>Sports Sneakers</b><br>⭐⭐⭐⭐<br>₹2799<br>
-<input type="radio" name="size3">6 <input type="radio" name="size3">7<br>
-<input type="radio" name="color3">White <input type="radio" name="color3">Black<br>
+<b>Sports Sneakers</b><br>₹2799<br>
 <button onclick="addToCart(2799)">Add to Cart</button>
 </td>
 
@@ -87,27 +89,21 @@
 <!-- PRODUCT 4 -->
 <td class="product" align="center">
 <img src="https://tse1.mm.bing.net/th/id/OIP.KEoySw4yejVqkAY-NNMN0gHaEK?pid=Api" class="product-img" width="150"><br>
-<b>Gym Sneakers</b><br>⭐⭐⭐⭐⭐<br>₹3199<br>
-<input type="radio" name="size4">6 <input type="radio" name="size4">7<br>
-<input type="radio" name="color4">Grey <input type="radio" name="color4">Black<br>
+<b>Gym Sneakers</b><br>₹3199<br>
 <button onclick="addToCart(3199)">Add to Cart</button>
 </td>
 
 <!-- PRODUCT 5 -->
 <td class="product" align="center">
 <img src="https://m.media-amazon.com/images/I/81b0Xze-ZqL._AC_UL1500_.jpg" class="product-img" width="150"><br>
-<b>Walking Sneakers</b><br>⭐⭐⭐⭐<br>₹1999<br>
-<input type="radio" name="size5">6 <input type="radio" name="size5">7<br>
-<input type="radio" name="color5">White <input type="radio" name="color5">Black<br>
+<b>Walking Sneakers</b><br>₹1999<br>
 <button onclick="addToCart(1999)">Add to Cart</button>
 </td>
 
 <!-- PRODUCT 6 -->
 <td class="product" align="center">
 <img src="https://i.pinimg.com/originals/ab/f6/62/abf662ce03ee3500a7e8dda16b27d92d.jpg" class="product-img" width="150"><br>
-<b>Trendy Sneakers</b><br>⭐⭐⭐⭐⭐<br>₹2899<br>
-<input type="radio" name="size6">6 <input type="radio" name="size6">7<br>
-<input type="radio" name="color6">Pink <input type="radio" name="color6">Black<br>
+<b>Trendy Sneakers</b><br>₹2899<br>
 <button onclick="addToCart(2899)">Add to Cart</button>
 </td>
 
@@ -129,7 +125,7 @@
 
 </table>
 
-<!-- JAVASCRIPT -->
+<!-- JS -->
 <script src="javascript_module.js"></script>
 
 </body>
