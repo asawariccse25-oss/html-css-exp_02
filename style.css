@@ -1,4 +1,3 @@
-/* BODY */
 body {
     font-family: Arial, sans-serif;
     background-color: #fff5e6;
@@ -6,7 +5,6 @@ body {
     padding: 10px;
 }
 
-/* HEADER */
 .header {
     background-color: #6a5acd;
     border-radius: 10px;
@@ -19,21 +17,18 @@ body {
     margin: 0;
 }
 
-/* LEFT PANEL */
 .left-panel {
     background-color: #f2f2f2;
     padding: 15px;
     border-radius: 10px;
 }
 
-/* RIGHT PANEL */
 .right-panel {
     background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
 }
 
-/* TABLE */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -44,7 +39,6 @@ td {
     vertical-align: top;
 }
 
-/* PRODUCT CARD */
 .product {
     background-color: #fff0f5;
     padding: 15px;
@@ -55,7 +49,6 @@ td {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* HOVER EFFECT */
 .product:hover {
     transform: scale(1.05); /* thoda subtle */
     box-shadow: 0 10px 20px rgba(0,0,0,0.25);
@@ -63,18 +56,15 @@ td {
     z-index: 10;
 }
 
-/* IMAGE */
 .product-img {
     border-radius: 8px;
     transition: transform 0.3s;
 }
 
-/* IMAGE ZOOM */
 .product:hover .product-img {
     transform: scale(1.1); /* thoda controlled zoom */
 }
 
-/* BUTTON */
 button {
     background-color: #6a5acd;
     color: white;
@@ -86,32 +76,27 @@ button {
     transition: transform 0.2s, background 0.3s;
 }
 
-/* BUTTON CLICK */
 button:active {
     transform: scale(0.95);
     background-color: green;
 }
 
-/* BUTTON HOVER */
 button:hover {
     background-color: #483d8b;
 }
 
-/* CART TOTAL */
 h2 {
     color: #333;
     margin-top: 10px;
     text-align: center;
 }
 
-/* MESSAGE */
 #msg {
     text-align: center;
     color: green;
     font-weight: bold;
 }
 
-/* REVIEWS */
 .reviews {
     background: white;
     padding: 15px;
@@ -120,17 +105,14 @@ h2 {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* LIST */
 ul {
     padding-left: 20px;
 }
 
-/* INPUT SPACING */
 input {
     margin: 5px 0;
 }
 
-/* RESPONSIVE IMAGE */
 img {
     max-width: 100%;
     height: auto;
